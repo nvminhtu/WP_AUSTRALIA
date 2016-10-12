@@ -1,0 +1,42 @@
+<p>Fill out the form below to request a free quote.</p>
+<h3>Are you attempting to collect from other businesses, or individual consumers?</h3>
+[select collects "-Please Make a Selection-" "I am not a business but have a debt owed to me" "Collect from only businesses" "Collect from only individual consumers" "Collect from both businesses and individual consumers"]
+
+<h3>Roughly how much money are you currently looking to collect?</h3>
+[select money "-Please Make a Selection-" "$500 - $1000" "$1000 - $5000" "$5000 - $25000" "$25000 - $50000" "$50000 - $100000" "$100000 - $500000" "$500000 - 1000000" "$1000000+"]
+
+<h3>Approximately how many accounts are you looking to collect on?</h3>
+[select accounts "-Please Make a Selection-" "1" "2 - 5" "6 - 10" "11 - 20" "21 - 30" "31 - 50" "51+"]
+
+<h3>How many employees do you have?</h3>
+[select employees "-Please Make a Selection-" "1 - 9" "10 - 19" "20 - 49" "50 - 99" "100 - 499" "500 - 999" "1000+"]
+
+<h3>How long, on average, have the debts you need collected been outstanding?</h3>
+[select debts "-Please Make a Selection-" "Less Than 90 Days" "3 - 6 Months" "6 - 12 Months" "More than 1 Year" "More than 2 Years"]
+
+<h3>What Industry are you In?</h3>
+[select industry "-Please Make a Selection-" "Advertising/Marketing" "Agriculture/Forestry" "Architecture" "Banking/Fianance" "Biotech/Pharmaceuticals" "Business Equipment" "Business Service" "Construction" "Consulting/Research" "Education" "Finance Services" "Environmental" "Government" "Healthcare" "Legal" "Media &amp; Entertainment" "Manufacturing" "Mortage" "Non-Profit" "Real-Estate" "Restaurant" "Retail" "Shipping/Transportation" "Technology" "Telecommunications" "Travel/Hospitality" "Other"]
+
+<h3>Your Information</h3>
+<label> First Name (required)
+    [text* first-name] </label>
+
+<label> Last Name (required)
+    [text* last-name] </label>
+
+<label> Company
+    [text* company] </label>
+
+<label> Title
+    [text title] </label>
+
+<label> E-mail (required)
+    [email* your-email] </label>
+
+<label> Phone
+    [text your-phone] </label>
+
+<label> Your Comments
+    [textarea your-comments] </label>
+
+[submit "Send Information"]
